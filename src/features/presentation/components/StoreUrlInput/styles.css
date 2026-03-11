@@ -1,0 +1,49 @@
+.store-url-input {
+  margin-bottom: 1.5rem;
+}
+
+.store-url-input label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.store-url-input input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+}
+
+.store-url-input input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.1);
+}
+
+.error-message {
+  display: block;
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.store-url-input input::placeholder {
+  color: #adb5bd;
+  opacity: 0.7;
+}
+
+/* For Firefox */
+.store-url-input input::-moz-placeholder {
+  color: #adb5bd;
+  opacity: 0.7;
+}
+
+/* For Chrome, Safari, Edge */
+.store-url-input input::-webkit-input-placeholder {
+  color: #adb5bd;
+  opacity: 0.7;
+}

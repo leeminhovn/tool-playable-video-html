@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<style>
+  html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: black;
+  }
+  video, img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 111;
+      display: none;
+  }
+
+</style>
+<head >
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="ad.orientation" content="portrait,landscape">
+    <script type="text/javascript" src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"> </script>
+    <script>
+        var key = "XXX_XX_X_X_XX_24_12_2004_DAO_CONG_KHA";
+        var keyVideoL = `XXX_XX_X_X_XX_24_12_2004_DAO_CONG_KHA_KEY_VIDEO_L`;
+        var keyVideoP = `XXX_XX_X_X_XX_24_12_2004_DAO_CONG_KHA_KEY_VIDEO_P`;
+        var keyLinkAndroid = `XXX_XX_X_X_XX_24_12_2004_DAO_CONG_KHA_KEY_LINK_ANDROID`;
+        var keyLinkIOS = `XXX_XX_X_X_XX_24_12_2004_DAO_CONG_KHA_KEY_LINK_IOS`;
+
+        var userAgent = navigator.userAgent || navigator.vendor; var android = keyLinkAndroid; var ios = keyLinkIOS; 
+        var storeLink =(/android/i.test(userAgent)) ? android : ios;
+        var mp4_l = keyVideoL;
+        this.mp4_l = mp4_l;
+        var mp4_p = keyVideoP;
+        this.mp4_p = mp4_p;
+
+
+        function clickthrough(e){
+            e.preventDefault();
+            ExitApi.exit()
+
+        }
+
+        function updateVideoSrc() {
+            const vid = document.getElementById('vid');
+            const isPortrait = window.innerHeight > window.innerWidth;
+            const src = isPortrait ? mp4_p : mp4_l;
+            // if(isPortrait) {
+            //     vid.style.objectFit = "contain"
+            // } else {
+            //     vid.style.objectFit = "cover"
+
+            // }
+            if (vid.src !== src) {
+                vid.src = src;
+                vid.style.display = "block";
+                vid.play();
+            }
+        }
+        window.addEventListener("resize", updateVideoSrc);
+        window.addEventListener("load", updateVideoSrc);
+
+    </script>
+</head>
+
+    <body ontouchstart="clickthrough(event)" onmousedown="clickthrough(event)">
+        <video id="vid" playsinline autoplay loop muted></video>
+    </body>
+</html>
+
+
+

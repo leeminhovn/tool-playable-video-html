@@ -1,0 +1,240 @@
+.video-icon-tool {
+  padding: 2.5rem;
+  max-width: 80%;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 12px;
+  max-width: 640px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.video-icon-tool h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color:  #547ea7;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 2px solid #547ea7;;
+}
+.wrap-input-video-up-load {
+    display:  flex;
+    flex-direction: column;
+}
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.input-group input[type="file"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.wrap-buttons-option-export {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.export-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.export-button i {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Unity button */
+.unity-button {
+  background: #000000;
+}
+
+.unity-button:hover:not(:disabled) {
+  background: #333333;
+}
+
+/* Mintegral button */
+.mintegral-button {
+  background: #00A0E9;
+}
+
+.mintegral-button:hover:not(:disabled) {
+  background: #0082BD;
+}
+
+/* Google Ad button */
+.google-ad-button {
+  background: #4285F4;
+}
+
+.google-ad-button:hover:not(:disabled) {
+  background: #3367D6;
+}
+
+/* AppLovin button */
+.applovin-button {
+  background: #FF4081;
+}
+
+.applovin-button:hover:not(:disabled) {
+  background: #E63672;
+}
+
+.unity-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/></svg>');
+}
+
+/* Mintegral button */
+.mintegral-button {
+  background: #FF4B4B;
+}
+
+.mintegral-button:hover:not(:disabled) {
+  background: #E63939;
+}
+
+.mintegral-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>');
+}
+
+/* Google Ad button */
+.google-ad-button {
+  background: #4285F4;
+}
+
+.google-ad-button:hover:not(:disabled) {
+  background: #3367D6;
+}
+
+.google-ad-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>');
+}
+
+/* AppLovin button */
+.applovin-button {
+  background: #2E7D32;
+}
+
+.applovin-button:hover:not(:disabled) {
+  background: #1B5E20;
+}
+
+.applovin-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>');
+}
+
+/* Disabled state for all buttons */
+.export-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap-buttons-option-export {
+    gap: 0.75rem;
+  }
+
+  .export-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrap-buttons-option-export {
+    gap: 0.5rem;
+  }
+
+  .export-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+.size-error {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #fff5f5;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .size-error {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video-icon-tool {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .video-icon-tool h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 0;
+  }
+
+  .input-group label {
+    font-size: 0.9rem;
+  }
+
+  .export-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .video-input-file-info {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video-icon-tool {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  .video-icon-tool h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .export-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
