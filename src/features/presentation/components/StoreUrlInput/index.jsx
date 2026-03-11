@@ -8,7 +8,7 @@ const StoreUrlInput = ({ label, id, onChange, placeholder }) => {
     if (!url) return '';
     
     const patterns = {
-      chplay: /^https:\/\/play\.google\.com\/store\/apps\/details\?id=[\w\d\.]+$/,
+      chplay: /^https:\/\/play\.google\.com\/store\/apps\/details\?id=[\w.]+$/,
       appstore: /^https:\/\/apps\.apple\.com\/.+\/app\/.+\/id\d+$/
     };
 
